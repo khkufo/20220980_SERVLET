@@ -1,32 +1,26 @@
-<%@ page contentType = "text/html;charset=utf-8" %>
-<%@ page import="example.*" %>
+<%@ page contentType="text/html;charset=utf-8"%>
 <%@ page import="java.util.Date"%>
-<%
-    HelloWorld h=new HelloWorld();
-%>
+
 <html>
-    <head>
-        <%@ page import = "java.util.Date"%>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-        <script>
-            window.open("popup/popup1.jsp","popup","width=365,height=250,left=0,top=0")
-        </script>
-    </head>
-    <title>Welcome</title>
-    <body> <%-- jsp 주석 처리 --%>
-        <%@ include file="top_banner.jsp"%>
-        <%@ include file="top_menu.jsp"%>
-        <%@ include file="body_main.jsp"%>
-        <%@ include file="footer.jsp"%>
-        <%-- CLASS는 스타일 적용시에 사용되는 이름, 중첩 가능 --%>
-        <div class="container">
-            <div class="text-center">
-                <h3>
-                    <%=tagline%>
-                </h3>
-            </div>
-            <hr>
-        </div>
-    </body>
+<head>
+
+<%@ page import="java.util.Date"%>
+<script>
+	window.open("popup/popup1.jsp", "popup", "width=365, height = 250, left = 0, top=0")
+</script>
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<title>방갑습니다. 개인 쇼핑몰 사이트입니다.</title>
+</head>
+<body>
+    <%@ include file="top_banner.jsp" %>
+	<%@ include file="top_menu.jsp" %>
+	<%@ include file="body_main.jsp" %>	
+    <%@ include file="footer.jsp" %>
+</body>
 </html>

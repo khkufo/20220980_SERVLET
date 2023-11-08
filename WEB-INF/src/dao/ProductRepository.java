@@ -57,8 +57,8 @@ public class ProductRepository {
         }
         return productById;
     }
-}
 
 public void addProduct(Product product){
     listOfProducts.add(product);
+    }
 }
